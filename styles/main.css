@@ -1,0 +1,278 @@
+/* Author: Gia Cat Nguyen Tran*/
+
+/* General Styles */
+main {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+h5 {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: #fff;
+}
+
+.blockquote {
+    margin-bottom: 0;
+}
+
+/* Navigation Bar */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FCA311 !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    color: #fff;
+}
+
+.btn-outline-dark:hover {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    color: #fff;
+}
+
+section {
+    padding: 50px 10%;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* About Me */
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.landing-content {
+    text-align: start;
+    max-width: 500px;
+}
+
+.typing {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide the overflowing text */
+    width: 0;
+    /* Start with 0 width */
+    border-right: 3px solid black;
+    /* Simulates the typing cursor */
+
+    /* Typing animation */
+    animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.landing-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    text-align: left;
+    grid-column: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #FCA311;
+    border-color: #FCA311;
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+}
+
+
+/* Floating image structure */
+.landing-image {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    /* Allow image stacking */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Original Image */
+.landing-image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    animation: floatImage 3s ease-in-out infinite alternate;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Image Swap on Hover */
+.landing-image img:hover {
+    content: url('../media/myportrait-lefteyes.png');
+    /* Change to new image */
+}
+
+/* Floating Animation */
+@keyframes floatImage {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
+}
+
+/* Social Media Icons  */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* Align icons horizontally in the center */
+    gap: 20px;
+    /* Add space between icons */
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    /* Size of the icons */
+    color: #000;
+    /* Icon color */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover {
+    color: #0073b1;
+}
+
+/* LinkedIn Hover Color */
+.social-icons a:hover .fa-linkedin {
+    color: #0073b1;
+}
+
+/* Behance Hover Color */
+.social-icons a:hover .fa-behance {
+    color: #1769ff;
+}
+
+/* Instagram Hover Color */
+.social-icons a:hover .fa-instagram {
+    color: #E1306C;
+}
+
+/* GitHub Hover Color */
+.social-icons a:hover .fa-github {
+    color: #d7d7d7;
+}
+
+/* Photography Highlight Carousel */
+#photoHighlightCarousel {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-image {
+        order: -1;
+        /* Moves the image to the top */
+        margin-bottom: 50px;
+    }
+
+    .landing-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
