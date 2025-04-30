@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sounds</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Share Tech Mono Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/sounds.css">
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="media/logo.png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">GIA.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="favanimal.html">Favorite Animal</a></li>
+                            <li><a class="dropdown-item" href="monster.html">Monster Manager</a></li>
+                            <li><a class="dropdown-item active" href="sounds.html">Sounds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-custom my-5">
+
+        <h1 class="text-center mb-4">Sounds Project</h1>
+
+        <!-- Podcast -->
+        <section class="content-section">
+            <h2 class="text-center">Podcast</h2>
+            <h2 class="text-center">Things You Don't Need To Know But You Want To Know</h2>
+            <p class="text-center">By: Gia, Adelyn, Erik</p>
+            <div class="audio-wrapper">
+                <audio controls class="w-100">
+                    <source src="media/sounds/podcast.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section class="content-section">
+            <h2 class="text-center">Animation: Jim vs The Wind</h2>
+            <p class="text-center">Audio By: Gia</p>
+            <div class="video-wrapper">
+                <video controls class="w-100" style="max-height: 500px;">
+                    <source src="media/sounds/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+            <!-- Piano Website -->
+            <section class="content-section">
+                <h2 class="text-center">Piano Project</h2>
+                <div class="text-center mb-3">
+                    <p>Here’s a simple interactive piano I built! 🎹<br>Click the button below to go to my piano
+                        website!</p>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://giacn.ca/dgtl101/" class="btn btn-dark border-2" target="_blank">🎶 Play the
+                        Piano!</a>
+                </div>
+            </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Gia Tran. All rights reserved.</p>
+            <p class="small">Designed & Built by Gia Tran.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Page script -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

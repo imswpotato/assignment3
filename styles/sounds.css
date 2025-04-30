@@ -1,0 +1,44 @@
+/* Author: Gia Cat Nguyen Tran */
+
+/* General styling */
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+.container-custom {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+.content-section {
+  border: 2px solid #000;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+}
+
+.audio-wrapper,
+.video-wrapper {
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  border-top: 2px solid #000;
+  font-size: 0.9rem;
+}
