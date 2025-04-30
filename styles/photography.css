@@ -1,0 +1,99 @@
+/* Author: Gia Cat Nguyen Tran */
+
+/* General Styling */
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #000;
+    margin-bottom: 30px;
+}
+
+/* Film Photography */
+.film-photo {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 30px 5%;
+}
+
+.gallery {
+    margin-bottom: 50px;
+    text-align: center;
+    /* Center inside container */
+}
+
+.photo-card::after {
+    top: auto;
+    bottom: -8px;
+}
+
+/* Image Style */
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-thumb {
+    transition: transform 0.3s ease;
+}
+
+.photo-thumb:hover {
+    transform: scale(1.02);
+}
+
+/* Description */
+.description {
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #000;
+}
+
+/* Digital Photography */
+.gallery-item {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Video */
+.custom-video {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+    /* optional frame */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #000;
+}
