@@ -1,0 +1,108 @@
+/* Author: Gia Cat Nguyen Tran */
+
+/* General styling */
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navigation bar */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F58025 !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #F58025;
+    border-color: #F58025;
+    color: #fff;
+}
+
+/* Contact form */
+#contact h3,
+#contact label,
+#contact p,
+#formMessage {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#contact .form-control {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    font-family: 'Share Tech Mono', monospace;
+    border: 2px solid #000;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #000;
+}
+
+#contact .btn:hover {
+    background-color: #F58025;
+    color: #fff;
+    border-color: #F58025;
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: 3px solid #000;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.modal-header {
+    border-bottom: 2px solid #fff;
+}
+
+.modal-footer {
+    border-top: 2px solid #fff;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
