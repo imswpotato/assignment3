@@ -19,6 +19,7 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
+// Monster Creation Function from last assignment
 // Step 1: Set up the Monster Creation Form Submit Logic.
 document.getElementById("monster-form").addEventListener("submit", function (submitEvent) {
     // First check.
